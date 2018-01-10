@@ -1,0 +1,6 @@
+<Material MtlFlags="524320" Shader="Illum" GenMask="2080000000" StringGenMask="%SUBSURFACE_SCATTERING%VERTCOLORS" SurfaceType="mat_default" MatTemplate="" Diffuse="1,1,1" Specular="0,0,0" Opacity="1" Shininess="255" CloakAmount="0" vertModifType="0" LayerAct="0">
+ <Textures>
+  <Texture Map="Diffuse" File="%engine%/engineassets/textures/hex_grad.dds"/>
+ </Textures>
+ <PublicParams EmittanceMapGamma="1" SSSIndex="0"/>
+</Material>
