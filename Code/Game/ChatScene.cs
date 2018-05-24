@@ -40,7 +40,7 @@ namespace CryEngine.Game
 			_list.itemRenderer = RenderListItem;
 
 			_input = _mainView.GetChild("input").asTextInput;
-			_input.onKeyDown.Add(__inputKeyDown1);
+			_input.onSubmit.Add(onSubmit);
 
 			_mainView.GetChild("btnSend").onClick.Add(__clickSendBtn);
 			_mainView.GetChild("btnEmoji").onClick.Add(__clickEmojiBtn);
@@ -128,10 +128,9 @@ namespace CryEngine.Game
 			_input.ReplaceSelection("[:" + item.text + "]");
 		}
 
-		void __inputKeyDown1(EventContext context)
+		void onSubmit(EventContext context)
 		{
-			if (context.inputEvent.keyCode == KeyId.Enter)
-				_mainView.GetChild("btnSend1").onClick.Call();
+			_mainView.GetChild("btnSend").onClick.Call();
 		}
 	}
 }
