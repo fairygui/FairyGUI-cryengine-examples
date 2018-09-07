@@ -44,10 +44,6 @@
         "type": "EPluginType::Native"
       },
       {
-        "path": "bin/DOTween.dll",
-        "type": "EPluginType::Managed"
-      },
-      {
         "path": "bin/FairyGUI.dll",
         "type": "EPluginType::Managed"
       },

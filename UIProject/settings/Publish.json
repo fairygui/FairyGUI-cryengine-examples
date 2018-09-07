@@ -1,4 +1,5 @@
 {
+	"binaryFormat":true,
 	"codeGeneration":{
 		"classNamePrefix":"",
 		"codePath":"../Classes",

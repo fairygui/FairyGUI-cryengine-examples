@@ -209,8 +209,8 @@
     <component id="fou97r" name="Component13.xml" path="/components/"/>
     <component id="gojg7s" name="Button16.xml" path="/components/"/>
     <image id="gojg7t" name="22.png" path="/images/"/>
-    <sound id="gojg7u" name="tabswitch.mp3" path="/sound/" exported="true"/>
-    <sound id="o4lt7w" name="click.mp3" path="/sound/" exported="true"/>
+    <sound id="gojg7u" name="tabswitch.wav" path="/sound/" exported="true"/>
+    <sound id="o4lt7w" name="click.wav" path="/sound/" exported="true"/>
     <component id="iehu7x" name="Button82.xml" path="/components/"/>
     <image id="iehu7y" name="k36.png" path="/images/"/>
     <image id="iehu7z" name="k35.png" path="/images/"/>

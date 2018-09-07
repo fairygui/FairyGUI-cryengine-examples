@@ -4,10 +4,8 @@ public class ScrollPaneHeader : GComponent
 {
 	Controller _c1;
 
-	public override void ConstructFromXML(FairyGUI.Utils.XML xml)
+	protected override void OnConstruct()
 	{
-		base.ConstructFromXML(xml);
-
 		_c1 = this.GetController("c1");
 
 		this.onSizeChanged.Add(OnSizeChanged);

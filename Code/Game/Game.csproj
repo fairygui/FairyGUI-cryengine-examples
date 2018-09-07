@@ -35,9 +35,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DOTween, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="CryEngine.Common, Version=5.5.0.98, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\bin\DOTween.dll</HintPath>
+      <HintPath>..\..\..\Program\CRYENGINE Launcher\Crytek\CRYENGINE_5.4\bin\win_x64\CryEngine.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="CryEngine.Core, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program\CRYENGINE Launcher\Crytek\CRYENGINE_5.4\bin\win_x64\CryEngine.Core.dll</HintPath>
     </Reference>
     <Reference Include="FairyGUI, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -49,18 +53,6 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="CryEngine.Common">
-      <HintPath>..\..\..\..\Program\CRYENGINE Launcher\Crytek\CRYENGINE_5.4\bin\win_x64\CryEngine.Common.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="CryEngine.Core">
-      <HintPath>..\..\..\..\Program\CRYENGINE Launcher\Crytek\CRYENGINE_5.4\bin\win_x64\CryEngine.Core.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="CryEngine.Core.UI">
-      <HintPath>..\..\..\..\Program\CRYENGINE Launcher\Crytek\CRYENGINE_5.4\bin\win_x64\CryEngine.Core.UI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BagScene.cs" />
@@ -86,6 +78,7 @@
     <Compile Include="Player\PlayerAnimations.cs" />
     <Compile Include="Player\PlayerView.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="FairyGUI\UIPanel.cs" />
     <Compile Include="PullToRefreshScene.cs" />
     <Compile Include="ScrollPaneHeader.cs" />
     <Compile Include="ScrollPaneScene.cs" />

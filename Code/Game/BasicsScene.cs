@@ -17,7 +17,6 @@ namespace CryEngine.Game
 			UIConfig.horizontalScrollBar = "ui://Basics/ScrollBar_HZ";
 			UIConfig.tooltipsWin = "ui://Basics/WindowFrame";
 			UIConfig.popupMenu = "ui://Basics/PopupMenu";
-			UIConfig.defaultFont = "Arial";
 			UIPackage.AddPackage("UI/Basics");
 
 			_mainView = UIPackage.CreateObject("Basics", "Main").asCom;

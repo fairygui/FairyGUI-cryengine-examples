@@ -7,10 +7,8 @@ public class MailItem : GButton
 	Controller _fetchController;
 	Transition _trans;
 
-	public override void ConstructFromXML(FairyGUI.Utils.XML cxml)
+	protected override void OnConstruct()
 	{
-		base.ConstructFromXML(cxml);
-
 		_timeText = this.GetChild("timeText").asTextField;
 		_readController = this.GetController("IsRead");
 		_fetchController = this.GetController("c1");

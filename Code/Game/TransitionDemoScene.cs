@@ -1,6 +1,5 @@
 ﻿using System;
 using FairyGUI;
-using DG.Tweening;
 
 namespace CryEngine.Game
 {
@@ -88,7 +87,8 @@ namespace CryEngine.Game
 
 		void __playNum()
 		{
-			DOTween.To(() => _startValue, x => { _g5.GetChild("value").text = "" + (int)Math.Floor(x); }, _endValue, 0.3f).SetEase(Ease.Linear).SetUpdate(true);
+			GTween.To(_startValue, _endValue, 0.3f).SetEase(EaseType.Linear).OnUpdate(
+				(GTweener tweener)=> { _g5.GetChild("value").text = "" + (int)Math.Floor(tweener.value.x); });
 		}
 	}
 }

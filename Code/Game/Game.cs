@@ -2,6 +2,9 @@
 
 using System;
 using FairyGUI;
+using CryEngine.Rendering;
+using CryEngine.Common;
+using CryEngine.Core;
 
 namespace CryEngine.Game
 {
@@ -30,10 +33,20 @@ namespace CryEngine.Game
 			/*if(!Engine.IsSandbox)
 			{
 				Engine.Console.ExecuteString("map example", false, true);
-			}*/
-
-
+			*/
+			Engine.Console.ExecuteString("r_width 1136", false, true);
+			Engine.Console.ExecuteString("r_height 640", false, true);
+			
+			UIConfig.defaultFont = "Microsoft YaHei";
+			UIContentScaler.SetContentScaleFactor(1136, 640);
 			GRoot.inst.AddChild(new MenuScene());
+		}
+
+		[CryEngine.Attributes.ConsoleCommand("open_chat_ui", 0, "")]
+		void OpenChatUI()
+		{
+			GRoot.inst.RemoveChildren(0, -1, true);
+			GRoot.inst.AddChild(new ChatScene());
 		}
 
 		public static void Initialize()

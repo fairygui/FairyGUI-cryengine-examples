@@ -1,6 +1,5 @@
 ﻿using FairyGUI;
 using CryEngine;
-using DG.Tweening;
 
 public class BagWindow : Window
 {
@@ -33,12 +32,12 @@ public class BagWindow : Window
 	{
 		this.SetScale(0.1f, 0.1f);
 		this.SetPivot(0.5f, 0.5f);
-		this.TweenScale(new Vector2(1, 1), 0.3f).SetEase(Ease.OutQuad).OnComplete(this.OnShown);
+		this.TweenScale(new Vector2(1, 1), 0.3f).OnComplete(this.OnShown);
 	}
 
 	override protected void DoHideAnimation()
 	{
-		this.TweenScale(new Vector2(0.1f, 0.1f), 0.3f).SetEase(Ease.OutQuad).OnComplete(this.HideImmediately);
+		this.TweenScale(new Vector2(0.1f, 0.1f), 0.3f).OnComplete(this.HideImmediately);
 	}
 
 	void __clickItem(EventContext context)
